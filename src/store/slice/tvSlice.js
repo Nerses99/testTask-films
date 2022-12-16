@@ -3,7 +3,7 @@ import { tvBlandInfoThunk, tvBlandThunk } from "./thunk";
 import { initialState } from "./initialState";
 
 export const tvSlice = createSlice({
-  name: "pizza",
+  name: "films",
   initialState,
   reducers: {
     setItems: (state, action) => {
