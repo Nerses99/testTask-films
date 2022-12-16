@@ -1,0 +1,91 @@
+@import "style/variables.scss";
+@import "style/mixins.scss";
+.home {
+  @include WidthHigth;
+  margin-top: -100px;
+  padding-bottom: 30px;
+}
+.home__container {
+  @include WidthHigth;
+  .home__h3 {
+    margin-bottom: 20px;
+    h3 {
+      color: $black;
+      font-size: 22px;
+    }
+  }
+}
+.home__pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home__item {
+  max-width: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.home__item-img {
+  max-width: 200px;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 5px;
+  transition: all 0.5s ease-out;
+  position: relative;
+  z-index: 99;
+  &:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+  cursor: pointer;
+  img {
+    @include WidthHigth;
+  }
+}
+.home__item-reting {
+  margin-bottom: 5px;
+}
+.home__item-text {
+  max-width: 140px;
+}
+@media (max-width: 1280px) {
+  .home__item {
+    max-width: 230px;
+  }
+}
+@media (max-width: 992px) {
+  .home__item {
+    max-width: 240px;
+  }
+}
+@media (max-width: 778px) {
+  .home {
+    margin-top: 0px;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 671px) {
+  .home {
+    margin-top: 0px;
+    padding-top: 30px;
+  }
+  .home__item {
+    max-width: 257px;
+  }
+}
+@media (max-width: 570px) {
+  .home__item {
+    max-width: 200px;
+  }
+}
+@media (max-width: 456px) {
+  .home__item {
+    max-width: 150px;
+  }
+}

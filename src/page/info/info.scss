@@ -1,0 +1,95 @@
+@import "style/variables.scss";
+@import "style/mixins.scss";
+.info {
+  @include WidthHigth;
+  padding: 100px 0px 200px;
+}
+.info__container {
+  display: flex;
+  justify-content: space-between;
+}
+.left-info-item-contain {
+  width: 250px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info__content-left {
+  max-width: 600px;
+  width: 100%;
+  margin-right: 15px;
+}
+.info__content-left-title {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.left-info-item {
+  border-bottom: 1px solid $gray;
+  margin-bottom: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.left-info-item-title {
+  margin-right: 50px;
+}
+.left-info-item-text {
+  color: $gray;
+  margin-right: 3px;
+}
+.info__content-rigth {
+  max-width: 600px;
+  width: 100%;
+}
+.info__content-rigth-title {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.rigth-info-item {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $gray;
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+.rigth-info-item-starring {
+  display: flex;
+  align-items: center;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: $gray;
+    svg {
+      color: #fff;
+    }
+  }
+}
+.rigth-info-item-starring-rigth {
+  p {
+    color: $gray;
+  }
+}
+
+@media (max-width: 768px) {
+  .info__container {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .info__content-left,
+  .info__content-rigth {
+    min-width: 100%;
+  }
+}
+@media (max-width: 570px) {
+}
