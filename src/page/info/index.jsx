@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useParams } from "react-router-dom";
 import { selectFilms } from "store/selector";
 import { tvBlandInfoThunk } from "store/slice/thunk";
-import Show from "./components/Show";
-import Starring from "./components/Starring";
+import Show from "./components/shows";
+import Starring from "./components/starring";
 
 import "./info.scss";
 
